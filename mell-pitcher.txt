@@ -1,0 +1,31 @@
+clean and minimal
+
+use the colors as highlights 
+a mainly white page
+don't have to use all colours
+
+33FFF0 
+BDFFFA
+EAA8FF
+
+SITE NAME 
+Mell Pitcher
+Tag line - Writer . Degenerate (for now)
+San serif font only please 
+Stand in image for logo
+
+PAGES
+Home - mix of advertising upcoming projects, paperbrain podcast and newsletter
+Books - stand in cover images with synopsis and title
+Short Stories - the cover images with title and synopsis to the side
+Paperbrain Podcast - Little image with the podcast synopsis and links to spotify and itunes
+Newsletter - mailchimp link
+Contact - gmail
+About - picture with text
+
+Socials linked at the bottom 
+Twitter
+Instagram
+Pinterest
+
+Just Lorem Ispum everything for now
