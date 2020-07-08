@@ -1,0 +1,32 @@
+.navbar {
+  position: absolute;
+  z-index: 1;
+  background-color: $color-primary;
+  height: 8rem;
+  width: 100%;
+  top: 3.2rem;
+  padding-left: 9.6rem;
+  padding-right: 9.6rem;
+  @media (min-width: 320px) and (max-width: 480px) {
+    top: 1.6rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+}
+
+.navbar-brand img {
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 10rem;
+    height: 3.4rem;
+  }
+}
+
+.navbar-nav {
+  margin-left: auto;
+  align-items: center;
+}
+
+.navbar-item--icon {
+  height: 2rem;
+  width: 2.4rem;
+}

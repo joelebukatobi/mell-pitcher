@@ -1,0 +1,57 @@
+/*
+  Color Variables
+  ---------------
+*/
+$color-primary: #171019;
+$color-secondary: #146660;
+$color-tertiary: #5d4366;
+$color-white: #ffffff;
+$clor-black: #000000;
+
+/*
+  Font Variables
+  --------------
+*/
+
+$font-primary: "Open Sans", sans-serif;
+$font-secondary: "Raleway", sans-serif;
+
+/* 
+  Mixins 
+  ------
+*/
+
+/*
+  Mobile Responsiveness
+  ---------------------
+*/
+
+/*
+  Main
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a:link,
+a:visited a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px/16px = 62.5% 1rem
+}
+
+body {
+  font-family: $font-primary;
+  // color: ;
+  font: weight;
+  line-height: 1.6;
+}
