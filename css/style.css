@@ -1467,7 +1467,7 @@ body {
   .header__text {
     width: 31%;
     margin-left: 9.6rem;
-    margin-top: 23em;
+    margin-top: 20em;
     height: auto; }
     .header__text .heading-1,
     .header__text .paragraph {
@@ -1481,7 +1481,7 @@ body {
     position: absolute;
     z-index: 2;
     right: 10em;
-    top: 23em;
+    top: 20em;
     margin-bottom: 50rem; }
     .header__image--1 {
       height: 75rem;
@@ -1490,7 +1490,7 @@ body {
     position: absolute;
     z-index: -1;
     right: -10rem;
-    top: -10rem;
+    top: -7rem;
     content: "";
     height: 100%;
     width: 100%;
