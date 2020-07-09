@@ -1481,7 +1481,8 @@ body {
     position: absolute;
     z-index: 2;
     right: 10em;
-    top: 23em; }
+    top: 23em;
+    margin-bottom: 50rem; }
     .header__image--1 {
       height: 75rem;
       width: 67rem; }
@@ -1496,7 +1497,7 @@ body {
     background-color: rgba(93, 67, 102, 0.28); }
 
 .about {
-  margin-top: 30rem;
+  margin-top: 40rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1523,7 +1524,7 @@ body {
 .stories {
   display: flex;
   flex-direction: column;
-  margin-top: 8.8rem;
+  margin-top: 10rem;
   padding-left: 9.6rem;
   padding-right: 9.6rem;
   margin-bottom: 10rem; }
