@@ -1653,6 +1653,44 @@ body {
         .stories__col__text .paragraph:not(:last-child) {
           margin-bottom: 1rem; }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem; }
+  .contact .heading-2 {
+    color: #5d4366;
+    text-transform: uppercase;
+    text-align: center; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 6.4rem; }
+    .contact__form__group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 8rem;
+      width: 80rem; }
+      .contact__form__group label {
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: "Open Sans", sans-serif; }
+      .contact__form__group input {
+        border: none;
+        height: 50px;
+        border-bottom: 1.8px solid #146660;
+        font-size: 2.1rem; }
+      .contact__form__group textarea {
+        border: none;
+        border-bottom: 1.8px solid #146660;
+        font-size: 2.1rem; }
+    .contact__form .btn {
+      background-color: #146660;
+      width: 30rem;
+      color: #ffffff;
+      margin: 0 auto; }
+
 .nav-link {
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
