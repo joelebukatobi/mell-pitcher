@@ -1675,7 +1675,7 @@ body {
       .contact__form__group label {
         font-size: 1.6rem;
         font-weight: 400;
-        font-family: "Open Sans", sans-serif; }
+        font-family: "Raleway", sans-serif; }
       .contact__form__group input {
         border: none;
         height: 50px;
@@ -1690,6 +1690,70 @@ body {
       width: 30rem;
       color: #ffffff;
       margin: 0 auto; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+  padding-top: 6.4rem;
+  padding-left: 9.6rem;
+  padding-right: 9.6rem;
+  height: 30rem;
+  background-color: #146660;
+  color: #ffffff; }
+  .footer__links .heading-4 {
+    margin-bottom: 2.4rem; }
+    .footer__links .heading-4 span {
+      font-weight: 300; }
+  .footer__links li {
+    list-style: none; }
+    .footer__links li:not(:last-child) {
+      margin-bottom: 1.6rem; }
+    .footer__links li a:link,
+    .footer__links li a:visited {
+      color: #ffffff;
+      font-size: 2.1rem; }
+  .footer__social__form {
+    position: relative; }
+    .footer__social__form input {
+      height: 4rem;
+      border: none;
+      border-bottom: 5px solid #5d4366;
+      padding-left: 0.8rem;
+      width: 25rem; }
+      .footer__social__form input::placeholder {
+        color: #146660;
+        font-size: 1.6rem;
+        font-weight: 400; }
+    .footer__social__form button {
+      position: absolute;
+      background-color: #ffffff;
+      height: 4rem;
+      border: none;
+      padding-right: 0.8rem;
+      border-bottom: 5px solid #5d4366; }
+      .footer__social__form button svg {
+        fill: #146660; }
+  .footer__social__media {
+    margin-top: 3rem; }
+    .footer__social__media p {
+      font-weight: 400;
+      margin-bottom: 0; }
+    .footer__social__media hr {
+      margin: 0;
+      margin-bottom: 2rem;
+      width: 50%;
+      border: 0.5px solid #ffffff; }
+    .footer__social__media a:link,
+    .footer__social__media a:visited {
+      outline: none; }
+      .footer__social__media a:link:not(:last-child),
+      .footer__social__media a:visited:not(:last-child) {
+        margin-right: 2rem; }
+      .footer__social__media a:link svg,
+      .footer__social__media a:visited svg {
+        height: 3.5rem;
+        width: 3.5rem; }
 
 .nav-link {
   font-size: 1.6rem;
