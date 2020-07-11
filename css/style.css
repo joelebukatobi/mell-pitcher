@@ -1447,7 +1447,8 @@ body {
     align-items: center; }
   .navbar .navbar-item--icon {
     height: 2rem;
-    width: 2.4rem; }
+    width: 2.4rem;
+    fill: #ffffff; }
 
 .navbar-white {
   position: relative;
@@ -1576,12 +1577,11 @@ body {
     background-color: rgba(93, 67, 102, 0.28); }
 
 .about {
-  margin-top: 40rem;
+  margin-top: 30.4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 9.6rem;
-  padding-right: 9.6rem; }
+  padding: 6rem 9.6rem 4.8rem 9.6rem; }
   .about__image {
     display: flex;
     flex-direction: column; }
@@ -1604,10 +1604,10 @@ body {
 .stories {
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 12rem;
   padding-left: 9.6rem;
   padding-right: 9.6rem;
-  margin-bottom: 10rem; }
+  margin-bottom: 12rem; }
   .stories .heading-2 {
     min-width: 100%;
     text-align: center;
@@ -1615,12 +1615,12 @@ body {
     text-transform: uppercase; }
   .stories__col {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: 6.4rem; }
     .stories__col__1 {
       display: flex;
       flex-direction: column;
       position: relative;
-      margin-top: 5.6rem;
       width: 48.5%; }
       .stories__col__1--image {
         width: 100%;
@@ -1642,7 +1642,6 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-top: 5.6rem;
       width: 48.5%; }
       .stories__col__2__row {
         display: flex;
@@ -1735,7 +1734,8 @@ body {
 .contact {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem; }
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
   .contact .heading-2 {
     color: #5d4366;
     text-transform: uppercase;
@@ -1744,12 +1744,12 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 6.4rem; }
+    margin-top: 3.2rem; }
     .contact__form__group {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-bottom: 8rem;
+      margin-bottom: 3.2rem;
       width: 80rem; }
       .contact__form__group label {
         font-size: 1.6rem;
