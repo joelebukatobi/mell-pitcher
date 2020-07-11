@@ -4,7 +4,7 @@
   background-color: $color-primary;
   height: 8rem;
   width: 100%;
-  top: 3.2rem;
+  margin-top: 3.2rem;
   padding-left: 9.6rem;
   padding-right: 9.6rem;
   @media (min-width: 320px) and (max-width: 480px) {
@@ -12,21 +12,138 @@
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   }
-}
 
-.navbar-brand img {
-  @media (min-width: 320px) and (max-width: 480px) {
-    width: 10rem;
-    height: 3.4rem;
+  & .navbar-brand img {
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 10rem;
+      height: 3.4rem;
+    }
+  }
+
+  & .navbar-nav {
+    margin-left: auto;
+    align-items: center;
+  }
+
+  & .navbar-item--icon {
+    height: 2rem;
+    width: 2.4rem;
   }
 }
 
-.navbar-nav {
-  margin-left: auto;
-  align-items: center;
+.navbar-white {
+  position: relative;
+  background-color: $color-white;
+  margin-bottom: 3.2rem;
+
+  & .navbar-brand {
+    & svg {
+      fill: $color-primary;
+      height: 8rem;
+      width: 31.3rem;
+    }
+  }
+
+  & .nav-link {
+    color: $color-primary;
+
+    & .navbar-item--icon {
+      fill: $color-primary;
+      height: 2rem;
+      width: 2.4rem;
+    }
+  }
 }
 
-.navbar-item--icon {
-  height: 2rem;
-  width: 2.4rem;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+  padding-top: 6.4rem;
+  padding-left: 9.6rem;
+  padding-right: 9.6rem;
+  height: 30rem;
+  background-color: $color-secondary;
+  color: $color-white;
+
+  &__links {
+    & .heading-4 {
+      margin-bottom: 2.4rem;
+
+      & span {
+        font-weight: 300;
+      }
+    }
+    & li {
+      &:not(:last-child) {
+        margin-bottom: 1.6rem;
+      }
+      list-style: none;
+      & a:link,
+      & a:visited {
+        color: $color-white;
+        font-size: 2.1rem;
+      }
+    }
+  }
+
+  &__social {
+    &__form {
+      position: relative;
+      & input {
+        height: 4rem;
+        border: none;
+        border-bottom: 5px solid $color-tertiary;
+        padding-left: 0.8rem;
+        width: 25rem;
+        &::placeholder {
+          color: $color-secondary;
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+      }
+
+      & button {
+        position: absolute;
+        background-color: $color-white;
+        height: 4rem;
+        border: none;
+        padding-right: 0.8rem;
+        border-bottom: 5px solid $color-tertiary;
+        & svg {
+          fill: $color-secondary;
+          height: 2.4rem;
+          width: 2.4rem;
+        }
+      }
+    }
+
+    &__media {
+      margin-top: 3rem;
+      & p {
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+
+      & hr {
+        margin: 0;
+        margin-bottom: 2rem;
+        width: 50%;
+        border: 0.2px solid $color-white;
+      }
+
+      & a:link,
+      & a:visited {
+        outline: none;
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+        & svg {
+          height: 3.5rem;
+          width: 3.5rem;
+          fill: $color-white;
+        }
+      }
+    }
+  }
 }
