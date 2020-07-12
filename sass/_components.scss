@@ -361,7 +361,7 @@
       width: 100%;
       padding-left: 2.4rem;
       // margin-right: 20rem;
-      padding-bottom: 2.4rem;
+      padding-bottom: 4.8rem;
       bottom: 0;
       color: $color-white;
       z-index: 5;
@@ -371,41 +371,56 @@
         padding-top: 1.6rem;
         width: 100%;
       }
+      .heading-2 {
+        text-transform: capitalize;
+      }
+
+      & hr {
+        width: 97.6%;
+        border-color: $color-white;
+      }
     }
   }
 }
 
 .recent {
-  margin-top: 12rem;
+  margin-top: 9.6rem;
   padding-left: 9.6rem;
   padding-right: 9.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  & .heading-2 {
-    text-transform: uppercase;
-    // text-align: center;
-    color: $color-tertiary;
-  }
   &__story {
-    margin-top: 5.6rem;
+    width: 60%;
+    // margin-top: 5.6rem;
+    & .heading-2 {
+      font-size: 3rem;
+      color: $color-tertiary;
+      font-weight: 400;
+    }
     &__cards {
-      width: 65%;
+      width: 100%;
       &__card {
+        -webkit-box-shadow: 0px 0px 16px -3px rgba(207, 207, 207, 1);
+        -moz-box-shadow: 0px 0px 16px -3px rgba(207, 207, 207, 1);
+        box-shadow: 0px 0px 16px -3px rgba(207, 207, 207, 1);
         margin-top: 4em;
         width: 100%;
         &__image {
           position: relative;
           width: inherit;
-          height: 45rem;
+          height: 35rem;
           &--image {
             width: inherit;
             height: inherit;
-            background-size: cover;
+            // background-size: conver;
           }
           &__title {
             position: absolute;
             z-index: 5;
             bottom: 0;
-            & .heading-2 {
+            & .heading-4 {
               padding-bottom: 2.4rem;
               padding-left: 2.4rem;
               bottom: 0;
@@ -435,6 +450,16 @@
           }
         }
       }
+    }
+  }
+
+  &__sidebar {
+    // background-color: #cccccc;
+    width: 35%;
+    .heading-4 {
+      font-size: 3rem;
+      color: $color-tertiary;
+      font-weight: 400;
     }
   }
 }

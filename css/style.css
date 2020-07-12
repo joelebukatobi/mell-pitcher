@@ -1797,7 +1797,7 @@ body {
       position: absolute;
       width: 100%;
       padding-left: 2.4rem;
-      padding-bottom: 2.4rem;
+      padding-bottom: 4.8rem;
       bottom: 0;
       color: #ffffff;
       z-index: 5; }
@@ -1806,34 +1806,45 @@ body {
         margin-bottom: 0;
         padding-top: 1.6rem;
         width: 100%; }
+      .featured__story__text .heading-2 {
+        text-transform: capitalize; }
+      .featured__story__text hr {
+        width: 97.6%;
+        border-color: #ffffff; }
 
 .recent {
-  margin-top: 12rem;
+  margin-top: 9.6rem;
   padding-left: 9.6rem;
-  padding-right: 9.6rem; }
-  .recent .heading-2 {
-    text-transform: uppercase;
-    color: #5d4366; }
+  padding-right: 9.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
   .recent__story {
-    margin-top: 5.6rem; }
+    width: 60%; }
+    .recent__story .heading-2 {
+      font-size: 3rem;
+      color: #5d4366;
+      font-weight: 400; }
     .recent__story__cards {
-      width: 65%; }
+      width: 100%; }
       .recent__story__cards__card {
+        -webkit-box-shadow: 0px 0px 16px -3px #cfcfcf;
+        -moz-box-shadow: 0px 0px 16px -3px #cfcfcf;
+        box-shadow: 0px 0px 16px -3px #cfcfcf;
         margin-top: 4em;
         width: 100%; }
         .recent__story__cards__card__image {
           position: relative;
           width: inherit;
-          height: 45rem; }
+          height: 35rem; }
           .recent__story__cards__card__image--image {
             width: inherit;
-            height: inherit;
-            background-size: cover; }
+            height: inherit; }
           .recent__story__cards__card__image__title {
             position: absolute;
             z-index: 5;
             bottom: 0; }
-            .recent__story__cards__card__image__title .heading-2 {
+            .recent__story__cards__card__image__title .heading-4 {
               padding-bottom: 2.4rem;
               padding-left: 2.4rem;
               bottom: 0;
@@ -1855,6 +1866,12 @@ body {
             font-size: 1.8rem; }
             .recent__story__cards__card__text .paragraph:not(:first-child) {
               padding-top: 1.6rem; }
+  .recent__sidebar {
+    width: 35%; }
+    .recent__sidebar .heading-4 {
+      font-size: 3rem;
+      color: #5d4366;
+      font-weight: 400; }
 
 .nav-link {
   font-size: 1.6rem;
