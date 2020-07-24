@@ -1873,6 +1873,15 @@ body {
       color: #5d4366;
       font-weight: 400; }
 
+.menu {
+  margin-top: 4.8rem;
+  height: 12.4rem;
+  position: relative;
+  background-color: #5d4366; }
+
+.story {
+  padding: 4.8rem 9.6rem 9.6rem 9.6rem; }
+
 .nav-link {
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
