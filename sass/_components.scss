@@ -1,5 +1,5 @@
 .btn {
-  padding: 1rem 4rem;
+  padding: 2rem 4rem;
   font-size: 2.1rem;
   border-radius: 0.5rem;
   border: none;
@@ -12,18 +12,33 @@
   background-color: $color-primary;
   display: flex;
   flex-direction: row;
-
+  z-index: -1;
+  margin: 0;
+  @media (min-width: 320px) and (max-width: 576px) {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2.4rem 2.4rem 5.6rem 2.4rem;
+  }
+  @media (min-width: 320px) and (max-width: 360px) {
+    padding: 2.4rem 2.4rem 0rem 2.4rem;
+  }
   &__text {
-    // margin-top: 30rem;
     width: 31%;
     margin-left: 9.6rem;
-    margin-top: 20em;
+    margin-top: 20rem;
     height: auto;
+    @media (min-width: 320px) and (max-width: 576px) {
+      margin: 0 0 5rem 0;
+      width: 100%;
+    }
 
     & .heading-1,
     & .paragraph {
       color: $color-white;
       margin-bottom: 2rem;
+      @media (min-width: 320px) and (max-width: 576px) {
+        margin-bottom: 1rem;
+      }
     }
 
     &--btn {
@@ -35,13 +50,31 @@
 
   &__image {
     position: absolute;
-    z-index: 2;
-    right: 10em;
-    top: 20em;
+    z-index: 1;
+    right: 10rem;
+    top: 10rem;
     margin-bottom: 50rem;
+    @media (min-width: 320px) and (max-width: 576px) {
+      left: 2.4rem;
+      top: 2.4rem;
+      margin-bottom: 0;
+    }
     &--1 {
-      height: 75rem;
+      height: 85rem;
       width: 67rem;
+      @media (max-width: 360px) {
+        height: 35rem;
+        width: 25rem;
+      }
+
+      @media (min-width: 360px) and (max-width: 375px) {
+        height: 45rem;
+        width: 35rem;
+      }
+      @media (min-width: 400px) and (max-width: 576px) {
+        height: 75rem;
+        width: 55rem;
+      }
     }
   }
 
@@ -49,11 +82,26 @@
     position: absolute;
     z-index: -1;
     right: -10rem;
-    top: -7rem;
+    top: -9rem;
     content: "";
     height: 100%;
     width: 100%;
     background-color: rgba($color-tertiary, 0.28);
+
+    @media (max-width: 320px) {
+      width: 70%;
+      top: 0;
+      right: -7rem;
+    }
+    @media (min-width: 360px) and (max-width: 375px) {
+      width: 70%;
+      top: 0;
+      right: -7rem;
+    }
+
+    @media (min-width: 400px) and (max-width: 576px) {
+      display: none;
+    }
   }
 }
 
@@ -64,6 +112,13 @@
   flex-direction: row;
   align-items: center;
   padding: 6rem 9.6rem 4.8rem 9.6rem;
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    flex-direction: column;
+    margin-top: 9.6rem;
+    padding: 2.4rem;
+    align-items: center;
+  }
   &__image {
     display: flex;
     flex-direction: column;
@@ -79,15 +134,35 @@
     &--4 {
       height: 30rem;
       width: 25rem;
-      margin-right: 1rem;
       margin-bottom: 1rem;
       background-color: rgba($color-secondary, 0.28);
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+      @media (max-width: 375px) {
+        height: 20rem;
+        width: 15rem;
+      }
+      @media (min-width: 360px) and (max-width: 375px) {
+        height: 25rem;
+        width: 20rem;
+      }
     }
   }
 
   &__content {
     margin-left: 13.5rem;
+    @media (min-width: 320px) and (max-width: 576px) {
+      margin: 4.8rem 0 4.8rem 0;
+
+      & .paragraph {
+        text-align: justify;
+      }
+    }
     & .heading-2 {
+      @media (min-width: 320px) and (max-width: 576px) {
+        text-align: center;
+      }
       text-transform: uppercase;
       color: $color-tertiary;
       margin-bottom: 2rem;
@@ -104,6 +179,10 @@
   padding-right: 9.6rem;
   margin-bottom: 12rem;
 
+  @media (min-width: 320px) and (max-width: 576px) {
+    margin: 0;
+    padding: 4.8rem 2.4rem;
+  }
   & .heading-2 {
     min-width: 100%;
     text-align: center;
@@ -115,11 +194,19 @@
     display: flex;
     justify-content: space-between;
     margin-top: 6.4rem;
+
+    @media (min-width: 320px) and (max-width: 576px) {
+      flex-direction: column;
+    }
     &__1 {
       display: flex;
       flex-direction: column;
       position: relative;
       width: 48.5%;
+
+      @media (min-width: 320px) and (max-width: 576px) {
+        width: 100%;
+      }
 
       &--image {
         width: 100%;
@@ -148,12 +235,17 @@
       flex-direction: column;
       justify-content: space-between;
       width: 48.5%;
-
+      @media (min-width: 320px) and (max-width: 576px) {
+        width: 100%;
+      }
       &__row {
         display: flex;
         justify-content: space-between;
         width: 100%;
         height: 50%;
+        @media (min-width: 320px) and (max-width: 576px) {
+          flex-direction: column;
+        }
         &:not(:last-child) {
           padding-bottom: 1.5rem;
         }
@@ -165,10 +257,19 @@
           position: relative;
           &:not(:last-child) {
             margin-right: 1.7rem;
+            @media (min-width: 320px) and (max-width: 576px) {
+              margin-right: 0;
+              margin-top: 2.4rem;
+            }
           }
           &:not(:first-child) {
             margin-left: 1.7rem;
+            @media (min-width: 320px) and (max-width: 576px) {
+              margin-left: 0;
+              margin-top: 2.4rem;
+            }
           }
+
           height: 100%;
           width: 100%;
           &--image {
@@ -280,6 +381,9 @@
   flex-direction: column;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 4.8rem 2.4rem;
+  }
   & .heading-2 {
     color: $color-tertiary;
     text-transform: uppercase;
@@ -291,12 +395,18 @@
     flex-direction: column;
     margin: 0 auto;
     margin-top: 3.2rem;
+    @media (min-width: 320px) and (max-width: 576px) {
+      margin: 4.8rem 0 0 0;
+    }
     &__group {
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin-bottom: 3.2rem;
       width: 80rem;
+      @media (min-width: 320px) and (max-width: 576px) {
+        width: 100%;
+      }
       & label {
         font-size: 1.6rem;
         font-weight: 400;
@@ -322,12 +432,19 @@
       width: 30rem;
       color: $color-white;
       margin: 0 auto;
+      margin-top: 2.4rem;
+
+      @media (min-width: 320px) and (max-width: 576px) {
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+      }
     }
   }
 }
 
 //  featured
 .featured {
+  padding-top: 4.8rem;
   padding-left: 9.6rem;
   padding-right: 9.6rem;
 
@@ -462,6 +579,10 @@
       color: $color-tertiary;
       font-weight: 400;
     }
+
+    &__new-posts {
+      margin-top: 3em;
+    }
   }
 }
 
@@ -471,8 +592,135 @@
   height: 12.4rem;
   position: relative;
   background-color: $color-tertiary;
+  display: flex;
+  align-items: center;
+  &__columns {
+    display: flex;
+    padding: 0 9.6rem 0 9.6rem;
+
+    &__col {
+      &:not(:last-child) {
+        margin-right: 9.6rem;
+      }
+      & .heading-4 {
+        color: $color-secondary-light;
+      }
+
+      & .paragraph {
+        color: $color-white;
+        font-weight: 400;
+      }
+
+      &__icons {
+        a:not(:last-child) {
+          margin-right: 1.6rem;
+        }
+        & svg {
+          fill: $color-white;
+          height: 2.5rem;
+          width: 2.4rem;
+        }
+      }
+    }
+  }
 }
 
+// story
 .story {
-  padding: 4.8rem 9.6rem 9.6rem 9.6rem;
+  padding: 4.8rem 9.6rem 4.8rem 9.6rem;
+}
+
+.book {
+  height: 100vh;
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9.6rem 9.6rem 0 9.6rem;
+
+  &__text {
+    width: 35%;
+    height: auto;
+
+    & .heading-1,
+    & .paragraph {
+      color: $color-white;
+      margin-bottom: 2rem;
+    }
+
+    &--btn {
+      background-color: $color-tertiary;
+      color: $color-white;
+      padding: 1rem 6rem;
+    }
+  }
+
+  &__image {
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin-right: 10rem;
+    align-items: center;
+    &__container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      &--1 {
+        position: absolute;
+        left: 0;
+        height: 40rem;
+        width: 30rem;
+      }
+      &--2 {
+        position: absolute;
+        z-index: 10;
+        height: 50rem;
+        width: 40rem;
+      }
+      &--3 {
+        position: absolute;
+        right: 0;
+        height: 40rem;
+        width: 30rem;
+      }
+    }
+  }
+}
+
+.library {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9.6rem;
+  &__text {
+    text-align: center;
+    & .paragraph {
+      width: 70rem;
+    }
+  }
+  &__books {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5rem;
+      &__image {
+        height: 45rem;
+        width: 35rem;
+        -webkit-box-shadow: 0px 2px 5px 1px rgba(133, 133, 133, 0.5);
+        -moz-box-shadow: 0px 2px 5px 1px rgba(133, 133, 133, 0.5);
+        box-shadow: 0px 2px 5px 1px rgba(133, 133, 133, 0.5);
+        &:not(:last-child) {
+          margin-right: 5rem;
+        }
+      }
+    }
+  }
 }

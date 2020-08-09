@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Mell Pitcher</title>
+  <title>Books</title>
 
   <!-- Core CSS -->
   <link href="css/style.css" rel="stylesheet">
@@ -18,10 +18,11 @@
 </head>
 
 <body>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="index.html">
-      <img src="images/Mell Pitcher@2x.png" alt="logo-image">
+      <img src="images/logo.svg" alt="logo-image">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -29,14 +30,14 @@
     </button>
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#about">Author</a>
+          <a class="nav-link" href="#about">Author</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="books.html">Books</a>
         </li>
         <li class="nav-item">
@@ -46,7 +47,7 @@
           <a class="nav-link" href="paperbrains.html">PaperBrains</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#contact">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
@@ -57,79 +58,51 @@
         </li>
       </ul>
     </div>
+    </div>
   </nav>
 
-  <!-- Featured -->
-  <div class="featured">
-    <div class="featured__story">
-      <div class="featured__story__bg">
-        <img src="images/featured-bg.png" alt="" class="featured__story__bg--image">
-      </div>
-      <div class="featured__story__text">
-        <h2 class="heading-2">Here are some of my short stories</h2>
-        <hr>
-        <p class="paragraph">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
-        </p>
+  <!-- Header  -->
+  <div class="book">
+    <div class="book__text">
+      <h1 class="heading-1">Retribution: The Series</h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+      </p>
+      <button class="book__text--btn btn">Explore</button>
+    </div>
+    <div class="book__image">
+      <!-- <div class="book__image--bg"></div> -->
+      <div class="book__image__container">
+        <img src="images/DRC Cover.JPG.png" alt="book-image" class="book__image__container--1">
+        <img src="images/DRC Cover.JPG.png" alt="book-image" class="book__image__container--2">
+        <img src="images/DRC Cover.JPG.png" alt="book-image" class="book__image__container--3">
       </div>
     </div>
   </div>
 
-  <!-- Recent -->
-  <div class="recent">
-    <div class="recent__story">
-      <h2 class="heading-2">Recent Stories</h2>
-      <hr>
-      <div class="recent__story__cards">
-        <div class="recent__story__cards__card">
-          <div class="recent__story__cards__card__image">
-            <img class="recent__story__cards__card__image--image" src="images/stories-img-1.jpg" alt="">
-            <div class="recent__story__cards__card__image__title">
-              <h4 class="heading-4">Story Title</h4>
-            </div>
-          </div>
-          <div class="recent__story__cards__card__text">
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et
-              dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
-            </p>
-            <p class="paragraph">
-              5 Min Read | <span><a href="story.html">Read</a></span>
-            </p>
-          </div>
-        </div>
-        <div class="recent__story__cards__card">
-          <div class="recent__story__cards__card__image">
-            <img class="recent__story__cards__card__image--image" src="images/stories-img-1.jpg" alt="">
-            <div class="recent__story__cards__card__image__title">
-              <h4 class="heading-4">Story Title</h4>
-            </div>
-          </div>
-          <div class="recent__story__cards__card__text">
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et
-              dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
-            </p>
-            <p class="paragraph">
-              5 Min Read | <span><a href="story.html">Read</a></span>
-            </p>
-          </div>
-        </div>
-      </div>
+  <!-- Books -->
+  <div class="library">
+    <div class="library__text">
+      <h2 class="heading-2">
+        Books
+      </h2>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.
+      </p>
     </div>
-    <div class="recent__sidebar">
-      <h4 class="heading-4">Top Stories</h4>
-      <hr>
-      <div class="recent__sidebar__new-posts">
-
+    <div class="library__books">
+      <div class="library__books__row">
+        <img src="images/DRC Cover.JPG.png" alt="" class="library__books__row__image">
+        <img src="images/DRC Cover.JPG.png" alt="" class="library__books__row__image">
+        <img src="images/DRC Cover.JPG.png" alt="" class="library__books__row__image">
+      </div>
+      <div class="library__books__row">
+        <img src="images/DRC Cover.JPG.png" alt="" class="library__books__row__image">
+        <img src="images/DRC Cover.JPG.png" alt="" class="library__books__row__image">
+        <img src="images/DRC Cover.JPG.png" alt="" class="library__books__row__image">
       </div>
     </div>
   </div>
-
-
 
   <!-- Footer -->
   <footer class="footer">

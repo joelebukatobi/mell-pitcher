@@ -4,6 +4,7 @@
 */
 $color-primary: #171019;
 $color-secondary: #146660;
+$color-secondary-light: #84b2af;
 $color-tertiary: #5d4366;
 $color-white: #ffffff;
 $clor-black: #000000;
@@ -44,9 +45,28 @@ a:visited a:focus {
   outline: none;
 }
 
+input:link,
+input:hover,
+input:focus,
+input:active {
+  outline: none;
+  background-color: tranparent;
+}
+
+button:link,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+  background-color: tranparent;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; //10px/16px = 62.5% 1rem
+  @media (min-width: 320px) and (max-width: 576px) {
+    font-size: 50%;
+  }
 }
 
 body {

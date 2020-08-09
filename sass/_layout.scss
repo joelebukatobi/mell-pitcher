@@ -1,28 +1,49 @@
 .navbar {
-  position: absolute;
+  position: relative;
   z-index: 1;
   background-color: $color-primary;
-  height: 8rem;
   width: 100%;
-  margin-top: 3.2rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
   padding-left: 9.6rem;
   padding-right: 9.6rem;
-  @media (min-width: 320px) and (max-width: 480px) {
-    top: 1.6rem;
+  @media (min-width: 320px) and (max-width: 576px) {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   }
 
-  & .navbar-brand img {
-    @media (min-width: 320px) and (max-width: 480px) {
-      width: 10rem;
-      height: 3.4rem;
+  & .navbar-brand {
+    z-index: 5;
+    & img {
+      @media (min-width: 320px) and (max-width: 576px) {
+        width: 15rem;
+        height: 3.4rem;
+        padding: 0;
+        margin: 0;
+      }
     }
   }
 
   & .navbar-nav {
     margin-left: auto;
     align-items: center;
+    @media (min-width: 320px) and (max-width: 576px) {
+      align-items: flex-start;
+    }
+  }
+
+  & .nav-item {
+    &:not(:last-child) {
+      margin-right: 4.8rem;
+    }
+    & .nav-link {
+      padding: 0 0 0.5rem 0;
+    }
+    @media (min-width: 320px) and (max-width: 576px) {
+      &:not(:last-child) {
+        margin-bottom: 2.1rem;
+      }
+    }
   }
 
   & .navbar-item--icon {
@@ -32,29 +53,52 @@
   }
 }
 
-.navbar-white {
-  position: relative;
-  background-color: $color-white;
-  margin-bottom: 3.2rem;
-
-  & .navbar-brand {
-    & svg {
-      fill: $color-primary;
-      height: 8rem;
-      width: 31.3rem;
-    }
-  }
-
-  & .nav-link {
-    color: $color-primary;
-
-    & .navbar-item--icon {
-      fill: $color-primary;
-      height: 2rem;
-      width: 2.4rem;
-    }
+.navbar-collapse {
+  @media (min-width: 320px) and (max-width: 576px) {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    padding: 12.4rem 2.4rem 0 2.4rem;
+    top: 0;
+    left: 0;
+    background-color: $color-primary;
+    z-index: 2;
   }
 }
+
+.navbar-dark .navbar-toggler {
+  z-index: 5;
+  border: none;
+}
+
+.active {
+  color: $color-white;
+  border-bottom: 0.15rem solid $color-secondary;
+}
+
+// .navbar-white {
+//   position: relative;
+//   background-color: $color-white;
+//   margin-bottom: 3.2rem;
+
+//   & .navbar-brand {
+//     & svg {
+//       fill: $color-primary;
+//       height: 8rem;
+//       width: 31.3rem;
+//     }
+//   }
+
+//   & .nav-link {
+//     color: $color-primary;
+
+//     & .navbar-item--icon {
+//       fill: $color-primary;
+//       height: 2rem;
+//       width: 2.4rem;
+//     }
+//   }
+// }
 
 .footer {
   display: flex;
@@ -66,6 +110,12 @@
   height: 30rem;
   background-color: $color-secondary;
   color: $color-white;
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    flex-direction: column;
+    padding: 6.4rem 2.4rem 6.4rem 2.4rem;
+    height: auto;
+  }
 
   &__links {
     & .heading-4 {
@@ -89,6 +139,9 @@
   }
 
   &__social {
+    @media (min-width: 320px) and (max-width: 576px) {
+      margin-top: 4.8rem;
+    }
     &__form {
       position: relative;
       & input {
@@ -97,6 +150,10 @@
         border-bottom: 5px solid $color-tertiary;
         padding-left: 0.8rem;
         width: 25rem;
+        @media (min-width: 320px) and (max-width: 576px) {
+          height: 5rem;
+          width: 35rem;
+        }
         &::placeholder {
           color: $color-secondary;
           font-size: 1.6rem;
@@ -108,6 +165,9 @@
         position: absolute;
         background-color: $color-white;
         height: 4rem;
+        @media (min-width: 320px) and (max-width: 576px) {
+          height: 5rem;
+        }
         border: none;
         padding-right: 0.8rem;
         border-bottom: 5px solid $color-tertiary;
@@ -123,7 +183,7 @@
       margin-top: 3rem;
       & p {
         font-weight: 400;
-        margin-bottom: 0;
+        margin-bottom: 2.4rem;
       }
 
       & hr {
