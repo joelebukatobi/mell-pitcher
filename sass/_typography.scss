@@ -12,8 +12,11 @@
   font-size: 5rem;
   font-family: $font-secondary;
   font-weight: 800;
-  @media (min-width: 320px) and (max-width: 360px) {
+  @media (min-width: 320px) and (max-width: 375px) {
     font-size: 3rem;
+  }
+  @media (min-width: 400px) and (max-width: 576px) {
+    font-size: 3.7rem;
   }
 }
 
@@ -36,7 +39,7 @@
   font-size: 2.1rem;
   font-family: $font-primary;
   font-weight: 300;
-  @media (min-width: 320px) and (max-width: 360px) {
+  @media (min-width: 320px) and (max-width: 375px) {
     font-size: 1.6rem;
   }
   @media (min-width: 400px) and (max-width: 576px) {
